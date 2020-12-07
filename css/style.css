@@ -1,0 +1,287 @@
+    * {
+        box-sizing: border-box;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    #services,
+    #portfolio,
+    #about,
+    #contact,
+    .team {
+        padding: 100px 0;
+    }
+    
+    .card {
+        border: none;
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 40px;
+        font-weight: bold;
+    }
+    
+    i,
+    .card-text,
+    #about p {
+        color: #77778D;
+    }
+    
+    .entry {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/heroX.jpg');
+        height: 100vh;
+        background-size: cover;
+        color: white;
+        background-attachment: fixed;
+    }
+    
+    .navbar {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .navbar button {
+        border: 1px solid #FED136;
+    }
+    
+    .fa-bars {
+        color: white;
+    }
+    
+    .fixed-top.scrolled {
+        background-color: black;
+        transition: width 0.5s;
+        opacity: 0.8;
+        width: 100%;
+    }
+    
+    .navbar-brand,
+    .nav-link {
+        color: white;
+    }
+    
+    .nav-link:hover {
+        color: #FED136;
+    }
+    
+    .navbar {
+        font-weight: bold;
+        background-color: transparent;
+        border: none;
+        padding-top: 20px;
+    }
+    
+    .welcome {
+        padding: 30vh 0;
+    }
+    
+    #about .container {
+        margin-top: 50px;
+    }
+    
+    #about p,
+    i {
+        font-family: serif;
+    }
+    
+    #about .row {
+        margin-top: 30px;
+    }
+    
+    .welcome i {
+        color: white;
+    }
+    
+    .welcome h1 {
+        font-size: 80px;
+    }
+    
+    .welcome button,
+    #contact button {
+        background-color: #FED136;
+        color: white;
+        width: 200px;
+        height: 60px;
+    }
+    
+    .welcome button:hover,
+    #contact button:hover {
+        color: #FED136;
+        background-color: white;
+    }
+    
+    #services .row,
+    #portfolio .row {
+        margin: 50px 0;
+    }
+    
+    #services .card i {
+        color: #FED136;
+        border-radius: 50%;
+        border: 3px solid #FED136;
+        padding: 20px;
+        margin: 0 auto;
+    }
+    
+    .card-title {
+        font-weight: bold;
+    }
+    
+    #portfolio,
+    .team,
+    .contact {
+        background-color: #F7F7F7;
+        overflow: hidden;
+        text-align: center;
+    }
+    
+    #portfolio .row+div {
+        padding: 0 10px;
+    }
+    
+    #portfolio .row {
+        background-color: #F7F7F7;
+    }
+    
+    #about .container {
+        position: relative;
+    }
+    
+    #about h2 {
+        font-size: 25px;
+    }
+    
+    .verticalLine {
+        background-color: #F1F1F1;
+        width: 5px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        z-index: -1;
+        bottom: 200px;
+    }
+    
+    .story {
+        border-radius: 50%;
+        background-color: #FED136;
+        border: 8px solid #F1F1F1;
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        color: white;
+        padding: 50px;
+        font-weight: bold;
+    }
+    
+    .black {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        background-color: black;
+        margin: 15px auto;
+    }
+    
+    .team .row i {
+        border: 2px solid;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        color: black;
+    }
+    
+    .team .row {
+        margin: 50px 0;
+    }
+    
+    .team h6,
+    .team p {
+        color: #77778D;
+        font-family: serif;
+    }
+    
+    #contact {
+        background-color: black;
+        color: white;
+        margin: 100px 0 20px 0;
+    }
+    
+    #contact .row {
+        margin: 50px 0;
+    }
+    
+    #contact input {
+        height: 50px;
+    }
+    
+    textarea {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .footer {
+        margin-bottom: 50px;
+    }
+    
+    .footer i {
+        background-color: black;
+        border-radius: 50%;
+        color: white;
+        width: 40px;
+        height: 40px;
+        padding: 12px;
+        margin: 0 5px;
+    }
+    
+    .footer p {
+        color: #77778D
+    }
+    
+    @media (min-width: 575.98px) and (max-width: 767.98px) {
+        .scrollRight {
+            padding: 50px 0 0 30vw;
+        }
+    }
+    
+    @media (max-width: 991.98px) {
+        #services h4 {
+            font-size: 15px;
+        }
+    }
+    
+    @media (max-width: 767.98px) {
+        #collapsibleNavbar {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .verticalLine {
+            display: none;
+        }
+        #contact input,
+        textarea {
+            margin-top: 20px;
+        }
+        .footer p {
+            display: block;
+            text-align: center;
+        }
+        .icons {
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+    
+    @media (min-width: 767.98px) {
+        #about .row {
+            height: 250px;
+        }
+    }
